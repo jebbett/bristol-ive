@@ -7,7 +7,7 @@ function growImage(imageId) {
         height *= 1.001;
         img.style.width = width + 'px';
         img.style.height = height + 'px';
-    }, 100);
+    }, 300);
 }
 
 function bounceImage(imageId) {

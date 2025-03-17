@@ -14,7 +14,7 @@ a:hover { color:#0673B9; }
 		#menu_15070e93 .mobileEntry { display: none; } 
 		#menu_15070e93 .normalEntry { display: block; } 
 		@media only screen and (max-width:650px) { 
-			#menu_15070e93 .mobileEntry { display: block; } 
+			#menu_15070e93 .mobileEntry { display: none; } 
 			#menu_15070e93 .normalEntry { display: none; } 
 		}
 #menu_1ce2b571 a { text-decoration: none; }
@@ -28,7 +28,7 @@ a:hover { color:#0673B9; }
 		#menu_1ce2b571 .normalEntry { display: block; } 
 		#menu_1ce2b571_menualignmentwrapper{ width:807px; left: calc(50% - 403px);  } 
 		@media only screen and (max-width:550px) { 
-			#menu_1ce2b571 .mobileEntry { display: block; } 
+			#menu_1ce2b571 .mobileEntry { display: none; } 
 			#menu_1ce2b571 .normalEntry { display: none; } 
 			#menu_1ce2b571_menualignmentwrapper { width:31px; left: calc(50% - 15px);  } 
 		}

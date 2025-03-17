@@ -82,7 +82,7 @@ function wsp_menu(elementid, menuidsuffix, panepadding, animations, openViaMouse
 		this.menuElementSubMenuParent.style.overflow = "visible";
 
 	if (this.menuElementEntryHolder != null)
-		this.menuElementEntryHolder.style.overflow = "hidden";
+		this.menuElementEntryHolder.style.overflow = "visible";
 	
 	
 	this.createMenuForItem = function(menuelementid, elementData)
