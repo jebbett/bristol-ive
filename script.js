@@ -3,11 +3,11 @@ function growImage(imageId) {
     let width = img.width;
     let height = img.height;
     setInterval(() => {
-        width *= 1.01;
-        height *= 1.01;
+        width *= 1.001;
+        height *= 1.001;
         img.style.width = width + 'px';
         img.style.height = height + 'px';
-    }, 1000);
+    }, 100);
 }
 
 function bounceImage(imageId) {
@@ -47,9 +47,18 @@ function moveRandomly(imageId) {
     img.addEventListener('click', move);
 }
 
+function scrollToRandomPosition() {
+    setInterval(() => {
+        const halfPageHeight = window.innerHeight / 2;
+        const randomOffset = Math.random() < 0.5 ? -halfPageHeight : halfPageHeight;
+        window.scrollBy({ top: randomOffset, behavior: 'smooth' });
+    }, 10000);
+}
+
 window.onload = function() {
     growImage('img_1a4e855');
     growImage('img_2eed27d');
     bounceImage('img_bounce');
     moveRandomly('img_annoying');
+    scrollToRandomPosition();
 };
