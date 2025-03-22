@@ -7,7 +7,7 @@ function growImage(imageId) {
         height *= 1.001;
         img.style.width = width + 'px';
         img.style.height = height + 'px';
-    }, 300);
+    }, 100);
 }
 
 function bounceImage(imageId) {
@@ -49,7 +49,7 @@ function moveRandomly(imageId) {
 
 function scrollToRandomPosition() {
     setInterval(() => {
-        const randomOffset = (Math.random() - 0.5) * 400;
+        const randomOffset = (Math.random() - 0.5) * 600;
         window.scrollBy({ top: randomOffset, behavior: 'smooth' });
     }, 10000);
 }
