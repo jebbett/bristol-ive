@@ -54,10 +54,18 @@ function scrollToRandomPosition() {
     }, 10000);
 }
 
+function simulateLaggyScrolling() {
+  window.addEventListener('scroll', () => {
+    const randomOffset = (Math.random() - 0.5) * 20; // Random offset between -10 and 10
+    window.scrollBy({ top: randomOffset, behavior: 'auto' });
+  });
+}
+
 window.onload = function() {
     growImage('sideleft');
     growImage('sideright');
     bounceImage('img_bounce');
     moveRandomly('img_annoying');
     scrollToRandomPosition();
+    simulateLaggyScrolling();
 };

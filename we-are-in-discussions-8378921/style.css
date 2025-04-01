@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menuone {
+    font-family: Segoe, "Segoe UI", "Helvetica Neue", sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: bold
+}
+
+.menutwo {
+    font-family: Segoe, "Segoe UI", "Helvetica Neue", sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+.thin-line {
+    border: none;
+    border-top: 1px solid lightgrey;
+    margin: 20px 0;
+}
+
+.maintext {
+    font-size: 13pt;
+    font-family: Segoe, "Segoe UI", "Helvetica Neue", sans-serif;
+    color: rgb(35, 35, 35);
+}
+
+.logo {
+    font-family: Segoe, "Segoe UI", "Helvetica Neue", sans-serif;
+    color: white;
+    font-size: 26px;
+    font-weight: bold
+}
+
+.navheading {
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(79, 79, 79);
+    font-weight: bold;
+}
+
+.breaking-news-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    z-index: 1000;
+    /* Ensure it is above other content */
+}
+
+.no-underline {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.no-underline:hover,
+.no-underline:focus,
+.no-underline:active {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
